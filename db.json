@@ -11,18 +11,8 @@
       "id": 9
     },
     {
-      "nombre": "1",
-      "precio": 2,
-      "id": 10
-    },
-    {
       "nombre": "proyecto4",
-      "precio": 1,
-      "id": 11
-    },
-    {
-      "nombre": "proyecto4",
-      "precio": 1,
+      "precio": "38",
       "id": 12
     },
     {
@@ -37,8 +27,13 @@
     },
     {
       "nombre": "te",
-      "precio": 4,
-      "id": 15
+      "precio": 15,
+      "id": 16
+    },
+    {
+      "nombre": "NolitoxD",
+      "precio": 66,
+      "id": 17
     }
   ]
 }

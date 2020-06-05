@@ -1,6 +1,11 @@
-import React, {useState} from 'react'
-
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { editarProductoAction } from '../actions/productoActions';
+import { useHistory } from 'react-router-dom';
 const EditarProducto = () => {
+
+    const history = useHistory(); // habilitar history para redirección
+    const dispatch = useDispatch();
 
 // nuevo state de producto
 const [ producto, guardarProducto] = useState({
@@ -9,6 +14,13 @@ const [ producto, guardarProducto] = useState({
 
 })
 
+ // producto a editar
+ const productoeditar = useSelector(state => state.productos.productoeditar);
+
+ // llenar el state automaticamente
+ useEffect( () => {
+    guardarProducto(productoeditar);
+}, [productoeditar]);
 
  // Leer los datos del formulario
  const onChangeFormulario = e => {
@@ -23,9 +35,9 @@ const { nombre, precio} = producto;
 const submitEditarProducto = e => {
     e.preventDefault();
 
-   // dispatch( editarProductoAction(producto) );
+   dispatch( editarProductoAction(producto) );
 
- //   history.push('/');
+    history.push('/');
 }
 
 

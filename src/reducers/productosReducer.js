@@ -17,7 +17,9 @@ import {
 const initialState ={
      productos:[],
      error: null,
-     loading:false
+     loading:false,
+     productoeliminar: null,
+     productoeditar: null
 }
 
 export default function (state= initialState, action){
