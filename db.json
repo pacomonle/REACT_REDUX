@@ -1,0 +1,44 @@
+{
+  "productos": [
+    {
+      "nombre": "Rib Eye",
+      "precio": "500",
+      "id": 7
+    },
+    {
+      "nombre": "Jugo de Limón",
+      "precio": 100,
+      "id": 9
+    },
+    {
+      "nombre": "1",
+      "precio": 2,
+      "id": 10
+    },
+    {
+      "nombre": "proyecto4",
+      "precio": 1,
+      "id": 11
+    },
+    {
+      "nombre": "proyecto4",
+      "precio": 1,
+      "id": 12
+    },
+    {
+      "nombre": "Jhon Doe",
+      "precio": 3,
+      "id": 13
+    },
+    {
+      "nombre": "tequila",
+      "precio": 9,
+      "id": 14
+    },
+    {
+      "nombre": "te",
+      "precio": 4,
+      "id": 15
+    }
+  ]
+}
